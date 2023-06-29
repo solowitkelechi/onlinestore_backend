@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -97,7 +97,8 @@ DATABASES = {
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://onlinestore-frontend.vercel.app"
+    "https://onlinestore-frontend.vercel.app",
+    "https://onlinestore-backend.vercel.app"
 ]
 
 
